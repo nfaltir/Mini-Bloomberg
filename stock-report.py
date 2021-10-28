@@ -7,7 +7,7 @@ import time
 
 st.write(""" ### Hi, Welcome 🚀 """)
 ticker = st.text_input("Enter Ticker Symbol: ")
-
+st.warning("Avoid error, enter stock ticker!")
 tickerData = yf.Ticker(ticker)
 tickerInfo = tickerData.info
 
