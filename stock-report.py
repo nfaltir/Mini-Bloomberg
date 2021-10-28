@@ -5,7 +5,7 @@ import streamlit as st
 import pandas as pd
 import time
 
-st.write(""" ### Hi, Welcome 😭 """)
+st.write(""" ### Hi, Welcome 🚀 """)
 ticker = st.text_input("Enter Ticker Symbol: ")
 
 tickerData = yf.Ticker(ticker)
