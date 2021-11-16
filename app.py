@@ -1,9 +1,7 @@
-from os import wait
-from altair.vegalite.v4.api import value
 import yfinance as yf
 import streamlit as st
 import pandas as pd
-import time
+
 
 #streamlit config
 
@@ -113,10 +111,13 @@ if len(ticker) > 0:
     #Financial Health Output
     st.write(""" ### Financial Health 💰""")
     st.write("Total Assets: ", totalAsset)
-    st.write("Total Debt: ", totalDebt)
-    st.write("Total Cash: ", totalCash)
+    st.write("Total Debt: ${:,.2f}".format(totalDebt))
+    st.write("Total Cash: ${:,.2f}".format(totalCash))
     st.write("Book Value", bookValue)
-    st.write("Total Revenue: ", totalRevenue)
+
+    st.write("Total Revenue:  ${:,.2f}".format(totalRevenue))
+   
+
     st.write("Revenue Growth: ", revenueGrowth)
     st.write("Operating Margins: ", operatingMargins)
     st.write("Profit Margins: ", profitMargins)

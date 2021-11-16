@@ -7,16 +7,19 @@ StreamLit Web App   🚀
 
 Run app locally
 -----------------
-1. install modules `pip3 install -r requirements.txt`
-2. run app `streamlit run <app name>`
 
+```
+pip3 install -r requirements.txt
+
+streamlit run app.py
+```
 
 <br>
 
 Features
 -----------------
 1. Enter stock ticker
-2. A report is automatically generated 😊
+2. A report is automatically generated 
 
 <br>
 
@@ -40,5 +43,21 @@ Upcoming Features
 
 Common Issues
 ----------------------
-Application will break, if entered ticker symbol is invalid. <br>
-Some stocks have missing data values for some variables, ex: `fulltimeEmployees` or `longName`
+Application will break, if user enters an invalid ticker symbol. <br>
+
+
+<br>
+
+Demo
+----------
+
+<br>
+
+<img src="demo.png"
+     alt="stock report"
+     style="margin: auto; margin-bottom: 50px; width: 800px;" />
+
+
+
+VISIT 👉 <a href="https://share.streamlit.io/nfaltir/streamlit-stock-report/main/app.py" target="_blank">Demo Site</a>
+
