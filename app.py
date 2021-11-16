@@ -7,7 +7,7 @@ import time
 
 #streamlit config
 
-st.set_page_config(page_title="Stock Report", page_icon="📙")
+st.set_page_config(page_title="Stock Report", page_icon="🔥")
 
 # ---- HIDE STREAMLIT STYLE ----
 hide_st_style = """
