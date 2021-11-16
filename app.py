@@ -78,7 +78,7 @@ if len(ticker) > 0:
     recommendations = tickerData.recommendations['To Grade'].value_counts()
     
     #ESG sustainability
-    esg = yf.Ticker(ticker).sustainability
+    esg = tickerData.sustainability
 
     #News 
     news = tickerData.news
