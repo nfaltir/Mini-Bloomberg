@@ -5,6 +5,21 @@ import streamlit as st
 import pandas as pd
 import time
 
+#streamlit config
+
+st.set_page_config(page_title="Stock Report", page_icon="📙")
+
+# ---- HIDE STREAMLIT STYLE ----
+hide_st_style = """
+            <style>
+         
+            footer {visibility: hidden;}
+           
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
+
 st.markdown("<h1 style='text-align: center; color: #4C4C6D;'> Stock Report 🌋</h1>", unsafe_allow_html=True)
 st.write("<hr><br>", unsafe_allow_html=True)
 ticker = st.text_input("Enter Ticker Symbol:")
@@ -121,3 +136,4 @@ if len(ticker) > 0:
     #ESG output
     st.write(""" ### ESG 🌱 """)
     st.write(esg)
+
