@@ -78,7 +78,7 @@ if len(ticker) > 0:
     recommendations = tickerData.recommendations['To Grade'].value_counts()
     
     #ESG sustainability
-    esg = tickerData.sustainability
+    #esg = tickerData.sustainability
 
     #News 
     news = tickerData.news
@@ -134,6 +134,6 @@ if len(ticker) > 0:
     st.dataframe(recommendations)
 
     #ESG output
-    st.write(""" ### ESG 🌱 """)
-    st.write(esg)
+    #st.write(""" ### ESG 🌱 """)
+    #st.write(esg)
 
