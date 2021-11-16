@@ -8,7 +8,7 @@ StreamLit Web App   🚀
 Run app locally
 -----------------
 
-```
+```python
 pip3 install -r requirements.txt
 
 streamlit run app.py
