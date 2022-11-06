@@ -48,8 +48,24 @@ Application will break, if user enters an invalid ticker symbol. <br>
 
 <br>
 
-https://user-images.githubusercontent.com/43119210/200151776-b69cb4c5-318f-4742-97e3-baf144820738.mov
-----------
+
+<br>
+
+<br><i>Figure A</i>
+<img src="./imgs/a.png"
+     alt="app demo"
+     style="float: left; margin-right: 10px; margin-bottom: 50px;" />
+
+
+<br>
+
+<br><i>Figure B</i>
+<img src="./imgs/b.png"
+     alt="app demo"
+     style="float: left; margin-right: 10px; margin-bottom: 50px;" />
+
+
+<br>
 
 <br>
 
