@@ -48,7 +48,7 @@ Application will break, if user enters an invalid ticker symbol. <br>
 
 <br>
 
-Demo
+![Demo](demo.mov)
 ----------
 
 <br>
