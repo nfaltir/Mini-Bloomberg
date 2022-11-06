@@ -53,9 +53,7 @@ Demo
 
 <br>
 
-<img src="demo.png"
-     alt="stock report"
-     style="margin: auto; margin-bottom: 50px; width: 800px;" />
+
 
 
 
