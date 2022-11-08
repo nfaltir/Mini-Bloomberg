@@ -127,6 +127,20 @@ if len(ticker) > 0:
     st.write("Recommendation Mean: ", recommendationMean)
     st.markdown("<hr><br>", unsafe_allow_html=True)
 
+    #Cashflow Statements
+    st.subheader("Cashflow Statement")
+    st.dataframe(tickerData.cashflow)
+    st.markdown("<hr><br>", unsafe_allow_html=True)
+
+    #Fin Statements
+    st.subheader("Income Statement")
+    st.dataframe(tickerData.financials)
+    st.markdown("<hr><br>", unsafe_allow_html=True)
+
+    #Balance Sheets
+    st.subheader("Balance Sheet")
+    st.dataframe(tickerData.balance_sheet)
+    st.markdown("<hr><br>", unsafe_allow_html=True)
 
     #Recommendations Output
     st.write("### Street Total Recommendations 🏛")
