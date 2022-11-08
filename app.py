@@ -88,18 +88,7 @@ if len(ticker) > 0:
     st.table(df_meta_data.reset_index(drop=True))
     st.markdown("<hr><br>", unsafe_allow_html=True)
     
-    #Prices Output
-    col1, col2 = st.columns(2)
-    with col1:
-        st.subheader("Prices 🏷")
-        st.write("Current Price:  ${:,.2f}".format(currentPrice))
-        st.write("52 Week Low:  ${:,.2f}".format(fiftytwoLow))
-        st.write("52 Week High:  ${:,.2f}".format(fiftytwoHigh))
-    with col2:
-        st.subheader("Target Prices 🎯")
-        st.write(f"Target Mean Price: ${meanTarget:,}")
-        st.write(f"Target Low Price: ${lowTarget}")
-        st.write(f"Target High Price: ${highTarget}")
+   
     
     st.markdown(f"<h4 style='text-align:start; font-size:20px; margin-top:35px;'>Recommendation: <strong style='color: #fafafa; border-radius: 4px; padding:2px 10px; background: skyblue; font-weight: 800;'>{recommKey}</strong></h4", unsafe_allow_html=True)
     st.markdown("<hr><br>", unsafe_allow_html=True)
