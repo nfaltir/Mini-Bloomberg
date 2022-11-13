@@ -66,6 +66,8 @@ if len(ticker) > 0:
     priceToBook = tickerInfo['priceToBook']
     trailingEps = tickerInfo['trailingEps']
     revPerEmployee = round(totalRevenue/fullTimeEmployees, 2)
+    trailingEps = tickerInfo['trailingEps']
+    forwardEps = tickerInfo['forwardEps']
 
     #Recommendations
     recommendations = tickerData.recommendations['To Grade'].value_counts()
@@ -124,6 +126,8 @@ if len(ticker) > 0:
     st.write("Operating Margins: ", operatingMargins)
     st.write("Profit Margins: ", profitMargins)
     st.write("Return on Equity: ", roe)
+    st.write("Trailing EPS: ", trailingEps)
+    st.write("Forward EPS: ", forwardEps)
     st.write("Recommendation Mean: ", recommendationMean)
     st.markdown("<hr><br>", unsafe_allow_html=True)
 
