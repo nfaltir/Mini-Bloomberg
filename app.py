@@ -156,6 +156,11 @@ if len(ticker) > 0:
     st.write(tickerData.institutional_holders)
     st.markdown("<hr><br>", unsafe_allow_html=True)
 
+    #ESG OUTPUT
+    st.subheader("ESG MetaData")
+    st.table(esg)
+    st.markdown("<hr><br>", unsafe_allow_html=True)
+
     #NEWS Output
     st.subheader("Recent News")
     for i in news:
