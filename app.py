@@ -2,8 +2,9 @@ import yfinance as yf
 import streamlit as st
 import pandas as pd
 
+
 #streamlit config
-st.set_page_config(page_title="Stock Report", page_icon="🌋")
+st.set_page_config(page_title="Stock Report", page_icon="🌱")
 # ---- HIDE STREAMLIT STYLE ----
 hide_st_style = """
             <style>
@@ -66,8 +67,6 @@ if len(ticker) > 0:
     priceToBook = tickerInfo['priceToBook']
     trailingEps = tickerInfo['trailingEps']
     revPerEmployee = round(totalRevenue/fullTimeEmployees, 2)
-    trailingEps = tickerInfo['trailingEps']
-    forwardEps = tickerInfo['forwardEps']
 
     #Recommendations
     recommendations = tickerData.recommendations['To Grade'].value_counts()
@@ -103,7 +102,7 @@ if len(ticker) > 0:
         st.write(f"Target Low Price: ${lowTarget}")
         st.write(f"Target High Price: ${highTarget}")
     
-    st.markdown(f"<h4 style='text-align:start; font-size:20px; margin-top:35px;'>Wall Street Recommendation: <strong style='color: #fafafa; border-radius: 4px; padding:2px 10px; background: skyblue; font-weight: 800;'>{recommKey}</strong></h4", unsafe_allow_html=True)
+    st.markdown(f"<h4 style='text-align:start; font-size:20px; margin-top:35px;'>Recommendation: <strong style='color: #fafafa; border-radius: 4px; padding:2px 10px; background: skyblue; font-weight: 800;'>{recommKey}</strong></h4", unsafe_allow_html=True)
     st.markdown("<hr><br>", unsafe_allow_html=True)
     
     #Graph
@@ -126,25 +125,9 @@ if len(ticker) > 0:
     st.write("Operating Margins: ", operatingMargins)
     st.write("Profit Margins: ", profitMargins)
     st.write("Return on Equity: ", roe)
-    st.write("Trailing EPS: ", trailingEps)
-    st.write("Forward EPS: ", forwardEps)
     st.write("Recommendation Mean: ", recommendationMean)
     st.markdown("<hr><br>", unsafe_allow_html=True)
 
-    #Cashflow Statements
-    st.subheader("Cashflow Statement")
-    st.dataframe(tickerData.cashflow)
-    st.markdown("<hr><br>", unsafe_allow_html=True)
-
-    #Fin Statements
-    st.subheader("Income Statement")
-    st.dataframe(tickerData.financials)
-    st.markdown("<hr><br>", unsafe_allow_html=True)
-
-    #Balance Sheets
-    st.subheader("Balance Sheet")
-    st.dataframe(tickerData.balance_sheet)
-    st.markdown("<hr><br>", unsafe_allow_html=True)
 
     #Recommendations Output
     st.write("### Street Total Recommendations 🏛")
@@ -154,11 +137,6 @@ if len(ticker) > 0:
     st.markdown("<br>", unsafe_allow_html=True)
     st.subheader("Major Holders")
     st.write(tickerData.institutional_holders)
-    st.markdown("<hr><br>", unsafe_allow_html=True)
-
-    #ESG OUTPUT
-    st.subheader("ESG MetaData")
-    st.table(esg)
     st.markdown("<hr><br>", unsafe_allow_html=True)
 
     #NEWS Output
