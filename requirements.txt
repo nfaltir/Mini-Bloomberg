@@ -1,4 +1,0 @@
-pandas==1.2.5
-streamlit==1.14.0
-yfinance==0.1.64
-numerize==0.12
