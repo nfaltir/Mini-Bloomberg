@@ -74,6 +74,15 @@ if len(ticker) > 0:
     #ESG sustainability
     esg = tickerData.sustainability
 
+    #Income Statements
+    income_statement = tickerData.income_stmt
+
+    #Balance Sheet
+    balance_sheet = tickerData.balance_sheet
+
+    #Cash Flow
+    cashflow = tickerData.cashflow
+
     #News 
     news = tickerData.news
 
@@ -128,6 +137,23 @@ if len(ticker) > 0:
     st.write("Recommendation Mean: ", recommendationMean)
     st.markdown("<hr><br>", unsafe_allow_html=True)
 
+    #Income Statement
+    st.markdown("<br>", unsafe_allow_html=True)
+    st.subheader("Income Statement")
+    st.table(income_statement)
+    st.markdown("<hr><br>", unsafe_allow_html=True)
+
+    #Cashflow Statement
+    st.markdown("<br>", unsafe_allow_html=True)
+    st.subheader("Cashflow")
+    st.table(cashflow)
+    st.markdown("<hr><br>", unsafe_allow_html=True)
+
+    #Balance Sheet
+    st.markdown("<br>", unsafe_allow_html=True)
+    st.subheader("Balance Sheet")
+    st.table(balance_sheet)
+    st.markdown("<hr><br>", unsafe_allow_html=True)
 
     #Recommendations Output
     st.write("### Street Total Recommendations 🏛")
@@ -136,7 +162,7 @@ if len(ticker) > 0:
 
     st.markdown("<br>", unsafe_allow_html=True)
     st.subheader("Major Holders")
-    st.write(tickerData.institutional_holders)
+    st.table(tickerData.institutional_holders)
     st.markdown("<hr><br>", unsafe_allow_html=True)
 
     #NEWS Output
