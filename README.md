@@ -96,7 +96,7 @@ Application will break, if user enters an invalid ticker symbol. <br>
 
 
 
-VISIT 👉 <a href="https://tinyurl.com/2gf6bt36" target="_blank">Demo Site</a>
+VISIT 👉 <a href="https://tinyurl.com/2qc838ch" target="_blank">Demo Site</a>
 
 <br>
 
