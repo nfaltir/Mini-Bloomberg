@@ -4,11 +4,12 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-yfinance = "*"
-streamlit = "*"
+yfinance = "==0.2.4"
+streamlit = "==1.17.0"
 watchdog = "*"
 pipreqs = "*"
-numpy = "*"
+numpy = "==1.24.1"
+pandas = "==1.5.2"
 
 [dev-packages]
 
